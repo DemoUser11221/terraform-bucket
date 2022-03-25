@@ -1,4 +1,4 @@
-variable "bucket_prefix" {}
+variable "bucketName" {}
 
 variable "tags" {
     type        = map

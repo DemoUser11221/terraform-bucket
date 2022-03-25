@@ -5,6 +5,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my-s3-bucket" {
-  bucket = "demo20220325154206460500000001"
+  bucket = var.bucketName
   tags = var.tags
 }

@@ -1,3 +1,13 @@
+terraform {
+  backend "s3" {
+    bucket         = "kaiburr-terraform-backend"
+    key            = "s3-rules"
+    region         = "us-east-1"
+    encrypt        = false
+    dynamodb_table = "kaiburr-terraform-lock"
+  }
+}
+
 provider "aws" {
   #access_key = var.access_key
   #secret_key = var.secret_key

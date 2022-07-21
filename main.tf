@@ -18,3 +18,9 @@ resource "aws_s3_bucket" "my-s3-bucket" {
   bucket = var.bucketName
   tags = var.tags
 }
+
+
+output "name" {
+  value = "naman"
+  sensitive = true
+}
